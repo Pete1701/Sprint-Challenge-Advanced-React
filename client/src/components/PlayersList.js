@@ -16,12 +16,12 @@ const PlayersList = (props) => {
                     onClick={toggleMode}
                     className={darkMode ? 'toggle toggled' : 'toggle'}
                 />
-            </div>
-            <h1>Players Info:</h1>            
-            {props.players.map(player => (
+            </div>            
+            <h1>Players Info:</h1>                
+            {/* {console.log(props)} */}
+            {props.players.map(player => (               
                 <Player key={player.id} name={player.name} country={player.country}/>
-            ))}
-            
+            ))}   
         </div>
     )
 };
